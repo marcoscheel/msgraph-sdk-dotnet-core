@@ -1,4 +1,4 @@
-﻿// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 // ------------------------------------------------------------------------------
 
@@ -25,6 +25,14 @@ namespace Microsoft.Graph
             internal static string MaximumValueExceeded = "MaximumValueExceeded";
 
             internal static string InvalidArgument = "invalidArgument";
+
+            internal const string TemporarilyUnavailable = "temporarily_unavailable";
+
+            internal const string AuthenticationChallengeRequired = "authenticationChallengeRequired";
+
+            internal const string InvalidClaim = "invalidClaim";
+
+            internal const string InvalidJWT = "invalidJWT";
         }
 
         internal static class Messages
@@ -66,6 +74,22 @@ namespace Microsoft.Graph
             internal static string ExpiredUploadSession = "Upload session expired. Upload cannot resume";
 
             internal static string NoResponseForUpload = "No Response Received for upload.";
+
+            internal const string AuthenticationChallengeRequired = "Authentication challange is required.";
+
+            internal const string MissingRetryAfterHeader = "Missing retry after header.";
+
+            internal const string MissingClaim = "Missing '{0}' claim.";
+
+            internal const string NullValue = "{0} cannot be null.";
+
+            internal static string UnexpectedMsalException = "Unexpected exception returned from MSAL.";
+
+            internal static string UnexpectedException = "Unexpected exception occured while authenticating the request.";
+
+            internal const string InvalidJWT = "Invalid JWT access token.";
+
+            internal const string EmptyScopes = "Scopes cannot be empty.";
 
             public static string InvalidProxyArgument = "Proxy cannot be set more once. Proxy can only be set on the proxy or defaultHttpHandler argument and not both.";
         }
